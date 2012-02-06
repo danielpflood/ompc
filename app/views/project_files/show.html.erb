@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @project_file.name %>
+</p>
+
+<p>
+  <b>Path:</b>
+  <%= @project_file.path %>
+</p>
+
+<p>
+  <b>Size:</b>
+  <%= @project_file.size %>
+</p>
+
+<p>
+  <b>Format:</b>
+  <%= @project_file.format %>
+</p>
+
+
+<%= link_to 'Edit', edit_project_file_path(@project_file) %> |
+<%= link_to 'Back', project_files_path %>

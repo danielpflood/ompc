@@ -1,0 +1,21 @@
+<h1>Listing project_downloads</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @project_downloads.each do |project_download| %>
+  <tr>
+    <td><%= link_to 'Show', project_download %></td>
+    <td><%= link_to 'Edit', edit_project_download_path(project_download) %></td>
+    <td><%= link_to 'Destroy', project_download, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Project download', new_project_download_path %>
